@@ -1,0 +1,201 @@
+html {
+    height:100%;
+}
+
+body {
+    height : 100%;
+    margin : 0;
+    font-family: Arial, sans-serif;
+    overflow: scroll;
+}
+
+#titre {
+    background: rgb(41, 41, 113);
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    border-left: solid 4px rgb(196, 14, 14);
+    border-right: solid 4px rgb(196, 14, 14);
+    padding: 15px;
+}
+#titre h2{
+
+    margin: 0;
+
+    font-size: 34px;
+
+    letter-spacing: 3px;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+#titre h3{
+
+    margin: 10px 0 0 0;
+
+    font-size: 22px;
+
+    font-style: italic;
+
+    color: rgb(220,220,220);
+}
+
+#body {
+    background-color: whitesmoke;  
+    padding: 20px;
+}
+
+#menu {
+    background-color: rgb(236, 235, 225);  
+    float : left;
+    width : 200px;
+    height :100%;
+    margin-right: 20px;
+    border-radius: 30px;
+    border-right: solid 4px rgba(165, 42, 42, 0.566);
+}
+
+#menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(41, 41, 113);
+    font-weight: bold;
+    display: block;        /* Pour que toute la zone soit cliquable */
+    padding: 12px 22px;    /* Déplacer le padding du LI vers le A */
+    margin: 10px 18px;
+    border-radius: 30px;
+    border-left: solid 4px rgba(165, 42, 42, 0.566);
+    background-color: rgb(247, 247, 246);
+}
+
+#menu > ul > li:hover > a{
+    background-color: rgb(41, 41, 113);
+    color: rgb(247, 247, 246);
+    border-left: solid 4px rgb(196, 14, 14);
+}
+
+/* Style des sous-liens */
+#menu li ul li a{
+
+    background-color: rgb(230,230,230);
+
+    font-size: 13px;
+
+    margin-left: 25px;
+
+    border-left: solid 3px rgb(120,120,120);
+
+    text-transform: none;
+
+    font-weight: normal;
+
+    color: rgb(70,70,70);
+}
+
+/* Hover des sous-liens */
+#menu li ul li a:hover{
+
+    background-color: rgb(200,200,200);
+
+    color: rgb(41,41,113);
+
+    border-left: solid 3px rgb(196,14,14);
+}
+
+#contenu {
+    background: rgb(236, 235, 225); /* aliceblue; */
+    margin-left: 200px;
+    /*margin-right: 20px;*/
+    height: 100%;
+    padding: 30px 35px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border-left: solid 4px rgba(165, 42, 42, 0.566);
+    overflow: auto;
+}
+
+#contenu img{
+    border-radius: 20px;
+    border: solid 3px rgba(165, 42, 42, 0.566);
+    display: block;
+    margin: 25px auto;
+}
+
+p img{
+     width:20%;
+}
+
+#contenu p{
+    text-align: justify;
+    font-size: 17px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    word-spacing: 2px;
+    text-indent: 30px;
+}
+
+.sous-titre{
+    color: rgb(41, 41, 113);
+    font-size: 24px;
+    border-bottom: solid 2px rgba(165, 42, 42, 0.566);
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+ul, ol {
+    margin: 15px 0 20px 40px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+table, th, td {
+    border: 2px solid rgba(165, 42, 42, 0.566);
+}
+
+table {
+    border-collapse: collapse;
+    background: rgb(228, 226, 201);
+}
+
+th {
+    padding: 8px;
+    background: rgb(230, 223, 143);
+    color:rgb(41, 41, 113);
+}
+
+table tr:nth-child(even) {
+    background: rgb(222, 220, 175);
+}
+
+table img{
+     width:35%;
+}
+
+table tr:hover{
+    background: rgb(246, 244, 222);
+}
+
+#auteurs {
+    background: rgb(41, 41, 113); /* beige; */
+    height : 10%;
+    color : rgb(125, 123, 123);
+    text-align: center;
+    vertical-align: text-bottom;
+    line-height: 10vh;
+    border-top: solid 3px rgb(88, 88, 140);
+}
+#auteurs:hover{
+    color: rgb(196, 14, 14);
+}

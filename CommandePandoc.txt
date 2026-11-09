@@ -1,0 +1,20 @@
+page de la Biographie:
+pandoc -f markdown -t html --template pandoc/templateProjet.html --metadata Biosection="pandoc/Biosection.html" --metadata title="Biographie" --metadata-file="pandoc/meta.yml" markdown/Biographie.md -s -o html/Biographie.html
+
+page des inventions : 
+pandoc -f markdown -t html --template pandoc/templateProjet.html --metadata Inventsection="pandoc/Inventsection.html" --metadata title="Inventions" --metadata-file="pandoc/meta.yml" markdown/inventions.md -s -o html/Inventions.html
+
+page de la guerre des courants :
+pandoc -f markdown -t html --template pandoc/templateProjet.html --metadata Guerresection="pandoc/Guerresection.html" --metadata title="Guerre des courants" --metadata-file="pandoc/meta.yml" markdown/Guerre.md -s -o html/Guerre.html
+
+page de la vie personnelle:
+pandoc -f markdown -t html --template pandoc/templateProjet.html --metadata Viesection="pandoc/Viesection.html" --metadata title="Vie personnelle" --metadata-file="pandoc/meta.yml" markdown/Vie.md -s -o html/Vie.html
+
+page de l'héritage:
+pandoc -f markdown -t html --template pandoc/templateProjet.html --metadata Héritsection="pandoc/Héritsection.html" --metadata title="Héritage et influence" --metadata-file="pandoc/meta.yml" markdown/Héritage.md -s -o html/Héritage.html
+
+page de la bibliographie:
+pandoc -f markdown -t html --template pandoc/templateProjet.html --metadata title="Sources" --metadata-file="pandoc/meta.yml" markdown/Bibiliographie.md -s -o html/Bibliographie.html
+
+page de l'index:
+pandoc -f markdown -t html --template pandoc/templateProjet.html --metadata title="Accueil" --metadata-file="pandoc/meta.yml" markdown/index.md -s -o html/index.html

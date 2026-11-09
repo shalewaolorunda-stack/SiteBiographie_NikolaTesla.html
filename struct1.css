@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+}
+
+body {
+    height : 100%;
+    margin : 0;
+}
+
+#menu {
+    background-color: #50bfe9; /* aquamarine; */
+    height : 15%;
+}
+
+#titre {
+    background: #f9dfa9; /* aqua; */
+    height : 10%;
+}
+
+#contenu {
+    background: #d18d72; /* aliceblue; */
+    height: 65%;
+    overflow: scroll;
+}
+
+#auteurs {
+    background: #251d1b; /* beige; */
+    height: 10%;
+}

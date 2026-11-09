@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon site scientifique</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #titre {
+            background: rgb(41, 41, 113);
+            height: 10%;
+            text-align: center;
+            border-radius: 20px;
+            border-left: solid 4px rgb(196, 14, 14);
+            border-right: solid 4px rgb(196, 14, 14);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        #body {
+            background-color: whitesmoke;
+            height: 80%;
+            display: flex;
+        }
+
+        #menu {
+            background-color: rgb(236, 235, 225);
+            float: left;
+            width: 200px;
+            height: 100%;
+            border-radius: 30px;
+            border-right: solid 4px rgba(165, 42, 42, 0.566);
+            margin-left: 10px;
+            overflow-y: auto;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu li a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: rgb(41, 41, 113);
+            font-weight: bold;
+            display: block;
+            padding: 12px 22px;
+            margin: 10px 18px;
+            border-radius: 30px;
+            border-left: solid 4px rgba(165, 42, 42, 0.566);
+            background-color: rgb(247, 247, 246);
+            transition: all 0.2s;
+        }
+
+        #menu li:hover a {
+            background-color: rgb(41, 41, 113);
+            color: rgb(247, 247, 246);
+            border-left: solid 4px rgb(196, 14, 14);
+        }
+
+        #contenu {
+            background: white;
+            margin-left: 20px;
+            flex: 1;
+            height: 100%;
+            overflow: scroll;    /* C'est ça qui fait scroller seulement le contenu */
+            border-radius: 30px;
+            border-left: solid 4px rgba(165, 42, 42, 0.566);
+            padding: 30px 35px;
+            margin-right: 10px;
+        }
+
+        #auteurs {
+            background: rgb(41, 41, 113);
+            height: 10%;
+            color: rgb(125, 123, 123);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        /* Pour tester le scroll - mettez beaucoup de contenu */
+        .long-content {
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="titre">
+    🔬 MON SITE SCIENTIFIQUE
+</div>
+
+<div id="body">
+    <div id="menu">
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Astrophysique</a></li>
+            <li><a href="#">Biologie</a></li>
+            <li><a href="#">Chimie</a></li>
+            <li><a href="#">Géologie</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="contenu">
+        <h1>Bienvenue sur mon espace scientifique</h1>
+        <p>Ici seul le contenu défile. Le titre, le menu et le pied de page restent fixes.</p>
+        <p>C'est exactement comme dans l'exemple que vous avez montré.</p>
+        
+        <!-- Met du contenu long pour voir le défilement -->
+        <div class="long-content"></div>
+        
+        <p>Quand vous scrollez, seul cette zone bouge !</p>
+    </div>
+</div>
+
+<div id="auteurs">
+    📧 contact@science.fr | © 2026 - Tous droits réservés
+</div>
+
+</body>
+</html>
